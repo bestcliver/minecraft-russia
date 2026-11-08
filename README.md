@@ -13,6 +13,7 @@
 **/russia lang ru** - Установить Русский / Set Russian  
 **/russia random** - Появление случайного закона / The emergence of a random law  
 **/russia interval "1-10"** - Интервал появления законов / The arrival interval of laws  
+**/russia coupon** - Получить талон на убийство (см. Закон 1) / To obtain a killing voucher (see Law 1)
 ## Законы / Laws
 **Талон на убийство / Murder coupon:**  
 RU - Чтобы убить любое существо надо получить талон на убийство (/russia coupon)  
