@@ -1,4 +1,4 @@
-# Россия MC / Russia MC (Mod is will available 01.12.2026)
+# Россия MC / Russia MC
 **Version: Minecraft Fabric 1.20.1**  
 **Dependencies: Fabric API, Upgrader items**
 
