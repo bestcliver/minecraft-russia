@@ -1,7 +1,8 @@
 # Россия RP / Russia RP
 **Version - Minecraft Fabric 1.20.1**  
-**Dependency - Fabric API**
-Новые законы выдаются каждые 5 минут от введения команды начала / New laws are issued every 5 minutes from the moment the start command is given
+**Dependency - Fabric API**  
+Новые законы выдаются каждые 5 минут от введения команды начала  
+New laws are issued every 5 minutes from the moment the start command is given
 ## Команды / Сommands
 /russia start singleplayer - Начать одиночную игру / Start a singleplayer game  
 /russia start мultiplayer - Начать многопользовательскую игру / Start a multiplayer game  
