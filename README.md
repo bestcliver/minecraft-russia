@@ -13,3 +13,4 @@ New laws are issued every 5 minutes from the moment the start command is given
 /russia lang ru - Установить Русский / Set Russian  
 /russia random - Новый закон / New law
 ## Законы / Laws
+Талон на убийство / Murder coupon - Чтобы убить любое существо надо получить талон на убийство (/russia coupon) / Kill Voucher – To target any creature, you must obtain a kill voucher (/russia coupon)
