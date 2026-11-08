@@ -3,6 +3,6 @@
 **Dependency - Fabric API**
 ## Команды / Сommands
 /russia start singleplayer - Начать одиночную игру / Start a singleplayer game  
-/russia start мultiplayer - Начать многопользовательскую игру / Start a multiplayer game
+/russia start мultiplayer - Начать многопользовательскую игру / Start a multiplayer game  
 /russia help - Получить помощь по командам / Get help with commands  
 /russia restart - Перезапустить игру / Restart game
