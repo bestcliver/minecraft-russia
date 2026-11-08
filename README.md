@@ -1,1 +1,1 @@
-# minecraft-russia-rp
+# Россия RP / Russia RP
