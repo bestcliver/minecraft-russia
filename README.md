@@ -15,4 +15,13 @@ New laws are issued every 5 minutes from the moment the start command is given
 ## Законы / Laws
 **Талон на убийство / Murder coupon:**  
 RU - Чтобы убить любое существо надо получить талон на убийство (/russia coupon)  
-EN - To kill any creature, you must obtain a murder coupon (/russia coupon)
+EN - To kill any creature, you must obtain a murder coupon (/russia coupon)  
+**Налог на добычу / Extraction tax:**  
+RU - Налог на любую добычу 25%
+EN - A 25% tax on any extraction
+**Призыв / Conscription:**  
+RU - Необходимо сменить биом нахождения за один игровой день  
+EN - You must move to a different biome within one in-game day  
+**Блокировка Майнкрафта в России / Blocking of Minecraft in the Russian:**  
+RU - Необходимо каждые 3 минуты менять ВПН с помощью выданного предмета   
+EN - The VPN service must be changed every 3 minutes using the provided item  
