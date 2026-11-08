@@ -1,6 +1,6 @@
 # Россия RP / Russia RP
-**Version - Minecraft Fabric 1.20.1**  
-**Dependency - Fabric API**
+**Version: Minecraft Fabric 1.20.1**  
+**Dependencies: Fabric API, Upgrader items**
 
 Новые законы выдаются каждые 5 минут от введения команды начала  
 New laws are issued every 5 minutes from the moment the start command is given
@@ -25,3 +25,9 @@ EN - You must move to a different biome within one in-game day
 **Блокировка Майнкрафта в России / Blocking of Minecraft in the Russian:**  
 RU - Необходимо каждые 3 минуты менять ВПН с помощью выданного предмета   
 EN - The VPN service must be changed every 3 minutes using the provided item  
+**Роскомнадзор / Roskomnadzor:**  
+RU - Каждые 3 минут случайный предмет в инвентаре блокируется навсегда  
+EN - Every 3 minutes, a random item in the inventory becomes permanently locked  
+**Штраф за мусор / Littering fine:**  
+RU - Предметы выброшенные в не положенном месте облагаются штрафом  
+EN - Items discarded in an unauthorized place are subject to a fine
