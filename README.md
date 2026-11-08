@@ -16,8 +16,8 @@
 **/russia coupon** - Получить талон на убийство (см. Закон 1) / To obtain a killing voucher (see Law 1)
 ## Законы / Laws
 **Талон на убийство / Murder coupon:**  
-RU - Чтобы убить любое существо надо получить талон на убийство (/russia coupon)  
-EN - To kill any creature, you must obtain a murder coupon (/russia coupon)  
+RU - Чтобы убить любое существо надо получить талон на убийство
+EN - To kill any creature, you must obtain a murder coupon
 **Налог на добычу / Extraction tax:**  
 RU - Налог на любую добычу 25%  
 EN - A 25% tax on any extraction  
