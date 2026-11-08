@@ -1,2 +1,3 @@
 # Россия RP / Russia RP
-AWDAWDAW
+Minecraft Fabric 1.20.1
+Dependencies: Fabric API
