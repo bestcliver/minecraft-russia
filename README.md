@@ -14,5 +14,5 @@ New laws are issued every 5 minutes from the moment the start command is given
 /russia random - Новый закон / New law
 ## Законы / Laws
 **Талон на убийство / Murder coupon:**  
-Чтобы убить любое существо надо получить талон на убийство (/russia coupon)  
-To kill any creature, you must obtain a murder coupon (/russia coupon)
+RU - Чтобы убить любое существо надо получить талон на убийство (/russia coupon)  
+EN - To kill any creature, you must obtain a murder coupon (/russia coupon)
