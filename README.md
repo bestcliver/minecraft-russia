@@ -5,4 +5,7 @@
 /russia start singleplayer - Начать одиночную игру / Start a singleplayer game  
 /russia start мultiplayer - Начать многопользовательскую игру / Start a multiplayer game  
 /russia help - Получить помощь по командам / Get help with commands  
-/russia restart - Перезапустить игру / Restart game
+/russia restart - Перезапустить игру / Restart game  
+/russia lang ru - Установить Английский / Set English  
+/russia lang en - Установить Русский / Set Russian  
+/russia random - Новый закон / New law
