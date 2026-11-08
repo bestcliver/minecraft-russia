@@ -1,5 +1,5 @@
 # Россия RP / Russia RP
-**Minecraft Fabric 1.20.1**  
+**Version - Minecraft Fabric 1.20.1**  
 **Dependency - Fabric API**
 ## Команды / Сommands
 /russia start singleplayer - Начать одиночную игру / Start a singleplayer game  
