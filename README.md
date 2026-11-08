@@ -11,7 +11,8 @@
 **/russia restart** - Перезапустить игру / Restart game  
 **/russia lang en** - Установить Английский / Set English  
 **/russia lang ru** - Установить Русский / Set Russian  
-**/russia random** - Новый закон / New law
+**/russia random** - Появление нового закона / The emergence of a new law
+**/russia interval "1-10"** - Интервал появления законов / The arrival interval of laws
 ## Законы / Laws
 **Талон на убийство / Murder coupon:**  
 RU - Чтобы убить любое существо надо получить талон на убийство (/russia coupon)  
