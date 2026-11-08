@@ -17,8 +17,8 @@ New laws are issued every 5 minutes from the moment the start command is given
 RU - Чтобы убить любое существо надо получить талон на убийство (/russia coupon)  
 EN - To kill any creature, you must obtain a murder coupon (/russia coupon)  
 **Налог на добычу / Extraction tax:**  
-RU - Налог на любую добычу 25%
-EN - A 25% tax on any extraction
+RU - Налог на любую добычу 25%  
+EN - A 25% tax on any extraction  
 **Призыв / Conscription:**  
 RU - Необходимо сменить биом нахождения за один игровой день  
 EN - You must move to a different biome within one in-game day  
