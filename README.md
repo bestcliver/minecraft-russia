@@ -1,4 +1,4 @@
-# Россия MC / Russia MC
+# Россия MC / Russia MC (beta version)
 **Version: Minecraft Fabric 1.20.1**  
 **Dependencies: Fabric API, Upgrader items**
 
