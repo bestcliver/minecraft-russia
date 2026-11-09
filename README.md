@@ -1,6 +1,6 @@
 # Россия MC / Russia MC  
 **Version: Minecraft Fabric 1.20.1**  
-**Dependencies: Fabric API, Upgrader items**
+**Dependencies: [Fabric API](https://modrinth.com/mod/fabric-api), [Upgrader items](https://modrinth.com/mod/upgrade-items)**
 
 *Новые законы по умолчанию выдаются каждые 5 минут от введения команды начала*  
 *By default, new laws are issued every 5 minutes from the moment the start command is given*
