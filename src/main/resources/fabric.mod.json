@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "russiamc",
+  "version": "${version}",
+  "name": "Россия MC / Russia MC",
+  "description": "Новые законы выдаются каждые 5 минут от введения команды начала / New laws are issued every 5 minutes from the moment the start command is given",
+  "authors": ["bestcliver"],
+  "contact": {
+    "sources": "https://github.com/bestcliver/minecraft-russia"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.bestcliver.russia.RussiaMod"],
+    "client": ["com.bestcliver.russia.client.RussiaClient"]
+  },
+  "mixins": ["russiamc.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "1.20.1",
+    "java": ">=17",
+    "fabric-api": "*",
+    "upgrader": "*"
+  }
+}

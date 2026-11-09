@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.bestcliver.russia.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ItemStackMixin",
+    "LootTableMixin",
+    "ServerPlayerEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
