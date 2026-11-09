@@ -29,9 +29,11 @@ public class GameState extends PersistentState {
 
 	public static class PlayerData {
 		public Lang lang = Lang.RU;
-		/** Conscription: biome the player has to leave, null = not started yet. */
+		/** Conscription: biome the player has to leave before the game day ends, null = not started yet. */
 		public String biome;
-		public int conscriptionTicks;
+		/** Conscription: the game day being checked, and whether the biome was already changed during it. */
+		public long conscriptionDay;
+		public boolean biomeChanged;
 		/** VPN: ticks until the block, -1 = not started yet. */
 		public int vpnTicks = -1;
 		public boolean blocked;
@@ -43,7 +45,8 @@ public class GameState extends PersistentState {
 
 		public void resetLaws() {
 			biome = null;
-			conscriptionTicks = 0;
+			conscriptionDay = 0;
+			biomeChanged = false;
 			vpnTicks = -1;
 			blocked = false;
 			rknTicks = -1;
@@ -86,7 +89,8 @@ public class GameState extends PersistentState {
 			PlayerData d = new PlayerData();
 			d.lang = p.getBoolean("en") ? Lang.EN : Lang.RU;
 			d.biome = p.contains("biome") ? p.getString("biome") : null;
-			d.conscriptionTicks = p.getInt("conscriptionTicks");
+			d.conscriptionDay = p.getLong("conscriptionDay");
+			d.biomeChanged = p.getBoolean("biomeChanged");
 			d.vpnTicks = p.getInt("vpnTicks");
 			d.blocked = p.getBoolean("blocked");
 			d.rknTicks = p.getInt("rknTicks");
@@ -113,7 +117,8 @@ public class GameState extends PersistentState {
 			if (d.biome != null) {
 				p.putString("biome", d.biome);
 			}
-			p.putInt("conscriptionTicks", d.conscriptionTicks);
+			p.putLong("conscriptionDay", d.conscriptionDay);
+			p.putBoolean("biomeChanged", d.biomeChanged);
 			p.putInt("vpnTicks", d.vpnTicks);
 			p.putBoolean("blocked", d.blocked);
 			p.putInt("rknTicks", d.rknTicks);

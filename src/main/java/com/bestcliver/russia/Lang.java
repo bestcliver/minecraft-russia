@@ -29,8 +29,8 @@ public enum Lang {
 		add("law.tax.name", "Налог на добычу", "Extraction tax");
 		add("law.tax.desc", "Налог на любую добычу 25%", "A 25% tax on any extraction");
 		add("law.conscription.name", "Призыв", "Conscription");
-		add("law.conscription.desc", "Необходимо сменить биом нахождения за один игровой день",
-				"You must move to a different biome within one in-game day");
+		add("law.conscription.desc", "Необходимо сменить биом нахождения до конца игрового дня",
+				"You must move to a different biome before the end of the in-game day");
 		add("law.vpn.name", "Блокировка Майнкрафта в России", "Blocking of Minecraft in the Russian");
 		add("law.vpn.desc", "Необходимо каждые 3 минуты менять ВПН с помощью выданного предмета",
 				"The VPN service must be changed every 3 minutes using the provided item");
@@ -46,7 +46,7 @@ public enum Lang {
 		add("chat.started", "§aИгра началась. Новый закон каждые %s мин.", "§aThe game has started. A new law every %s min.");
 		add("chat.restarted", "§aИгра перезапущена. Новый закон каждые %s мин.", "§aThe game has been restarted. A new law every %s min.");
 		add("chat.rkn_locked", "§cРоскомнадзор заблокировал предмет: §f", "§cRoskomnadzor has locked an item: §f");
-		add("chat.conscripted", "§cВы не сменили биом за игровой день.", "§cYou did not change biome within an in-game day.");
+		add("chat.conscripted", "§cВы не сменили биом до конца игрового дня.", "§cYou did not change biome before the end of the in-game day.");
 		add("chat.vpn_blocked", "§cМайнкрафт заблокирован. Смените ВПН выданным предметом.",
 				"§cMinecraft is blocked. Change the VPN using the provided item.");
 		add("chat.fine", "§cШтраф за мусор: изъято предметов на %s ед. ценности.",

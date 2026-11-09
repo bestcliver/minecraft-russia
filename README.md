@@ -2,8 +2,8 @@
 **Version: Minecraft Fabric 1.20.1**  
 **Dependencies: Fabric API, Upgrader items**
 
-*Новые законы выдаются каждые 5 минут от введения команды начала*  
-*New laws are issued every 5 minutes from the moment the start command is given*
+*Новые законы по умолчанию выдаются каждые 5 минут от введения команды начала*  
+*By default, new laws are issued every 5 minutes from the moment the start command is given*
 ## Команды / Сommands
 **/russia start singleplayer** - Начать одиночную игру / Start a singleplayer game  
 **/russia start мultiplayer** - Начать многопользовательскую игру / Start a multiplayer game  
@@ -12,7 +12,7 @@
 **/russia lang en** - Установить Английский / Set English  
 **/russia lang ru** - Установить Русский / Set Russian  
 **/russia random** - Появление случайного закона / The emergence of a random law  
-**/russia interval "1-10"** - Интервал появления законов / The arrival interval of laws  
+**/russia interval <1-10>** - Интервал появления законов / The arrival interval of laws  
 **/russia coupon** - Получить талон на убийство (см. Закон 1) / To obtain a killing voucher (see Law 1)
 ## Законы / Laws
 **Талон на убийство / Murder coupon:**  
@@ -22,8 +22,8 @@ EN - To kill any creature, you must obtain a murder coupon
 RU - Налог на любую добычу 25%  
 EN - A 25% tax on any extraction  
 **Призыв / Conscription:**  
-RU - Необходимо сменить биом нахождения за один игровой день  
-EN - You must move to a different biome within one in-game day  
+RU - Необходимо сменить биом нахождения до конца игрового дня  
+EN - You must move to a different biome before the end of the in-game day  
 **Блокировка Майнкрафта в России / Blocking of Minecraft in the Russian:**  
 RU - Необходимо каждые 3 минуты менять ВПН с помощью выданного предмета   
 EN - The VPN service must be changed every 3 minutes using the provided item  
