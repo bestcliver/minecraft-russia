@@ -184,27 +184,32 @@ public final class Game {
 	}
 
 	private static void tickPlayer(GameState state, ServerPlayerEntity p, boolean second) {
-		if (!p.isAlive() || p.isSpectator()) {
+		GameState.PlayerData d = state.data(p.getUuid());
+		if (!p.isAlive()) {
+			// After a respawn the conscription check starts over from the respawn biome.
+			d.biome = null;
 			return;
 		}
-		GameState.PlayerData d = state.data(p.getUuid());
+		if (p.isSpectator()) {
+			return;
+		}
 
 		if (state.laws.contains(Law.CONSCRIPTION)) {
-			if (d.biome == null) {
-				d.biome = biomeOf(p);
-				d.conscriptionTicks = GAME_DAY_TICKS;
-			} else {
-				d.conscriptionTicks--;
-				if (second && !biomeOf(p).equals(d.biome)) {
-					d.biome = biomeOf(p);
-					d.conscriptionTicks = GAME_DAY_TICKS;
-					bar(p, "bar.biome_changed");
-				} else if (d.conscriptionTicks <= 0) {
+			long day = p.server.getOverworld().getTimeOfDay() / GAME_DAY_TICKS;
+			if (d.biome == null || day < d.conscriptionDay) {
+				startConscriptionDay(p, d, day);
+			} else if (day > d.conscriptionDay) {
+				// The game day is over: whoever stayed in the same biome is conscripted.
+				if (!d.biomeChanged) {
 					d.biome = null;
 					chat(p, "chat.conscripted");
 					p.kill();
 					return;
 				}
+				startConscriptionDay(p, d, day);
+			} else if (second && !d.biomeChanged && !biomeOf(p).equals(d.biome)) {
+				d.biomeChanged = true;
+				bar(p, "bar.biome_changed");
 			}
 		}
 
@@ -240,6 +245,12 @@ public final class Game {
 				lockRandomItem(p);
 			}
 		}
+	}
+
+	private static void startConscriptionDay(ServerPlayerEntity p, GameState.PlayerData d, long day) {
+		d.biome = biomeOf(p);
+		d.conscriptionDay = day;
+		d.biomeChanged = false;
 	}
 
 	private static String biomeOf(ServerPlayerEntity p) {
@@ -452,7 +463,9 @@ public final class Game {
 			for (Law law : state.laws) {
 				buf.writeByte(law.ordinal());
 				int ticks = switch (law) {
-					case CONSCRIPTION -> d.biome == null ? -1 : d.conscriptionTicks;
+					// Time left until the end of the game day, hidden once the biome has been changed.
+					case CONSCRIPTION -> d.biome == null || d.biomeChanged ? -1
+							: GAME_DAY_TICKS - (int) (p.server.getOverworld().getTimeOfDay() % GAME_DAY_TICKS);
 					case MINECRAFT_BLOCK -> d.vpnTicks;
 					case ROSKOMNADZOR -> d.rknTicks;
 					default -> -1;

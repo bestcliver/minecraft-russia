@@ -3,7 +3,7 @@
   "id": "russiamc",
   "version": "${version}",
   "name": "Россия MC / Russia MC",
-  "description": "Новые законы выдаются каждые 5 минут от введения команды начала / New laws are issued every 5 minutes from the moment the start command is given",
+  "description": "Новые законы по умолчанию выдаются каждые 5 минут от введения команды начала / By default, new laws are issued every 5 minutes from the moment the start command is given",
   "authors": ["bestcliver"],
   "contact": {
     "sources": "https://github.com/bestcliver/minecraft-russia"
